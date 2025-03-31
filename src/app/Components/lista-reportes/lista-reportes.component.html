@@ -1,0 +1,53 @@
+
+<!-- listo fin -->
+
+   <!-- <div class="lista-reportes">
+    <div *ngFor="let reporte of reportes" class="reporte-item">
+      <p><strong>ID:</strong> {{ reporte.id }}</p>
+      <p><strong>Usuario:</strong> {{ reporte.usuario }}</p>
+      <p><strong>Fecha:</strong> {{ reporte.fecha | date:'short' }}</p>
+      <button (click)="leerReporte(reporte)">Leer</button>
+      <button (click)="borrarReporte(reporte.id)">Borrar</button>
+    </div>
+  
+  
+    <div *ngIf="reporteLeido" class="reporte-detalle">
+      <h3>Detalle del Reporte</h3>
+      <p><strong>ID:</strong> {{ reporteLeido.id }}</p>
+      <p><strong>Usuario:</strong> {{ reporteLeido.usuario }}</p>
+      <p><strong>Descripción:</strong> {{ reporteLeido.descripcion }}</p>
+      <div class="imagen-previa-container">
+        <img [src]="reporteLeido.foto" alt="Foto del equipo" class="imagen-previa" />
+      </div>
+    </div>
+  
+    
+    <button (click)="regresarAlFormulario()">Regresar al Formulario</button>
+  </div>
+   -->
+
+
+   <div class="lista-reportes">
+    <div *ngFor="let reporte of reportes" class="reporte-item">
+      <p><strong>🆔 ID:</strong> {{ reporte.id }}</p>
+      <p><strong>👤 Usuario:</strong> {{ reporte.usuario }}</p>
+      <p><strong>📅 Fecha:</strong> {{ reporte.fecha | date:'short' }}</p> <!-- Formato de fecha corto -->
+      <button (click)="leerReporte(reporte)">📖 Leer</button>
+      <button (click)="borrarReporte(reporte.id)">🗑️ Borrar</button>
+    </div>
+  
+    <!-- Aquí se muestra el reporte al hacer click en "Leer" -->
+    <div *ngIf="reporteLeido" class="reporte-detalle">
+      <h3>🔍 Detalle del Reporte</h3>
+      <p><strong>🆔 ID:</strong> {{ reporteLeido.id }}</p>
+      <p><strong>👤 Usuario:</strong> {{ reporteLeido.usuario }}</p>
+      <p><strong>📝 Descripción:</strong> {{ reporteLeido.descripcion }}</p>
+      <div class="imagen-previa-container">
+        <img [src]="reporteLeido.foto" alt="Foto del equipo" class="imagen-previa" />
+      </div>
+    </div>
+  
+    <!-- Botón para regresar al formulario -->
+    <button (click)="regresarAlFormulario()">🔙 Regresar al Formulario</button>
+  </div>
+  

@@ -1,0 +1,176 @@
+/* .lista-reportes {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    padding: 15px;
+    background: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    max-width: 100%;
+    margin: auto;
+    width: 100%;
+    max-width: 400px; 
+  }
+  
+  .reporte-item {
+    background: #fff;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  button {
+    background-color: #007bff;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    width: 100%; 
+    margin-top: 5px;
+  }
+  
+  button:disabled {
+    background-color: gray;
+    cursor: not-allowed;
+  }
+  
+  .reporte-detalle {
+    background: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+  }
+  
+  .imagen-previa-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+  }
+  
+  .imagen-previa {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+    object-fit: cover;
+  }
+   */
+
+
+/* Estilo general de la lista de reportes */
+.lista-reportes {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 30px;
+  background: linear-gradient(135deg, #9c4ef4, #8a2be2); /* Morado más claro */
+  border-radius: 18px;
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.3);
+  width: 100%;
+  max-width: 600px;
+  transition: all 0.3s ease-in-out;
+  color: white;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Efecto de luz neón */
+.lista-reportes::before {
+  content: '';
+  position: absolute;
+  top: -5px;
+  left: -5px;
+  right: -5px;
+  bottom: -5px;
+  background: linear-gradient(45deg, #ff00ff, #ffcc00, #00ffcc, #ff3300);
+  z-index: -1;
+  border-radius: 20px;
+  filter: blur(20px);
+  opacity: 0.5;
+}
+
+/* Estilo de los reportes individuales */
+.reporte-item {
+  background: rgba(255, 255, 255, 0.15);
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.reporte-item p {
+  margin: 0;
+}
+
+/* Botones de cada reporte */
+button {
+  background: linear-gradient(135deg, #ffcc00, #ff6600);
+  color: white;
+  padding: 12px;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  font-size: 16px;
+  width: 100%;
+  font-weight: bold;
+  text-transform: uppercase;
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+  margin-top: 10px;
+  text-align: center;
+}
+
+/* Efecto al pasar el ratón sobre los botones */
+button:hover {
+  background: linear-gradient(135deg, #ff9900, #ff3300);
+  transform: translateY(-3px);
+  box-shadow: 0 8px 20px rgba(255, 51, 0, 0.5);
+}
+
+/* Estilo del detalle del reporte */
+.reporte-detalle {
+  background: rgba(255, 255, 255, 0.2);
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
+  margin-top: 20px;
+}
+
+/* Estilo de la imagen previa */
+.imagen-previa-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 15px;
+}
+
+.imagen-previa {
+  max-width: 100%;
+  height: auto;
+  border-radius: 12px;
+  object-fit: cover;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+}
+
+/* Estilo del botón de regreso */
+button:last-child {
+  background: #4CAF50;
+  margin-top: 30px;
+}
+
+/* Diseño responsivo para dispositivos móviles */
+@media (max-width: 480px) {
+  .lista-reportes {
+    padding: 20px;
+    max-width: 95%;
+  }
+
+  .reporte-item, .reporte-detalle, button {
+    font-size: 14px;
+    padding: 12px;
+  }
+}

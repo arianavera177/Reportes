@@ -1,0 +1,52 @@
+<!-- listo
+<div class="login">
+    <input [(ngModel)]="usuario" placeholder="Usuario" />
+    <input [(ngModel)]="contrasena" type="password" placeholder="Contraseña" />
+    <button (click)="login()">Iniciar sesión</button>
+    <div *ngIf="loginExitoso">
+      <p>Bienvenido, mantenimiento</p>
+    </div>
+  </div> -->
+
+
+<!-- 
+  <div class="login">
+    <div class="formulario-reporte">
+     
+       <h1>Ingresa</h1>
+      <input [(ngModel)]="usuario" placeholder="Usuario" />
+  
+ 
+      <input [(ngModel)]="contrasena" type="password" placeholder="Contraseña" />
+  
+     
+      <button (click)="login()">Iniciar sesión</button>
+  
+     
+      <div *ngIf="loginExitoso">
+        <p>Bienvenido, mantenimiento</p>
+      </div>
+    </div>
+  </div>
+   -->
+   <div class="login">
+    <div class="formulario-login">
+      <!-- Título de la página -->
+      <h1>👤 Ingresa</h1>
+  
+      <!-- Input para el usuario -->
+      <input [(ngModel)]="usuario" placeholder="📧 Usuario" />
+  
+      <!-- Input para la contraseña -->
+      <input [(ngModel)]="contrasena" type="password" placeholder="🔒 Contraseña" />
+  
+      <!-- Botón para iniciar sesión -->
+      <button (click)="login()">🔑 Iniciar sesión</button>
+  
+      <!-- Mensaje de bienvenida después de iniciar sesión -->
+      <div *ngIf="loginExitoso">
+        <p>🎉 Bienvenido, mantenimiento</p>
+      </div>
+    </div>
+  </div>
+  

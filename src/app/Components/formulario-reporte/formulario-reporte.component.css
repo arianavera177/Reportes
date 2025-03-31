@@ -1,0 +1,281 @@
+/* 
+.formulario-reporte {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  max-width: 100%;
+  margin: auto;
+  padding: 30px;
+  background: linear-gradient(135deg, #4b0082, #8a2be2);
+  border-radius: 18px;
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.3);
+  width: 100%;
+  max-width: 500px;
+  transition: all 0.3s ease-in-out;
+  color: white;
+  position: relative;
+  overflow: hidden;
+}
+
+
+.formulario-reporte::before {
+  content: '';
+  position: absolute;
+  top: -5px;
+  left: -5px;
+  right: -5px;
+  bottom: -5px;
+  background: linear-gradient(45deg, #ff00ff, #ffcc00, #00ffcc, #ff3300);
+  z-index: -1;
+  border-radius: 20px;
+  filter: blur(20px);
+  opacity: 0.5;
+}
+
+
+.formulario-reporte:hover {
+  transform: scale(1.04);
+  box-shadow: 0 18px 50px rgba(0, 0, 0, 0.4);
+}
+
+
+input {
+  padding: 14px 18px;
+  border: 2px solid rgba(255, 255, 255, 0.5);
+  border-radius: 12px;
+  font-size: 17px;
+  width: 455px;
+  background: rgba(255, 255, 255, 0.15);
+  color: white;
+  transition: all 0.3s ease;
+  backdrop-filter: blur(8px);
+}
+
+input:focus {
+  border-color: #ffcc00;
+  background: rgba(255, 255, 255, 0.3);
+  outline: none;
+  box-shadow: 0 0 15px rgba(255, 204, 0, 0.8);
+}
+
+
+.error {
+  color: #ffcc00;
+  font-size: 15px;
+  font-weight: bold;
+  text-align: center;
+  margin-top: -5px;
+}
+
+
+.imagen-previa-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 12px;
+  border-radius: 12px;
+  overflow: hidden;
+  border: 2px dashed #ffcc00;
+  padding: 12px;
+  background: rgba(255, 255, 255, 0.2);
+  transition: all 0.3s ease-in-out;
+}
+
+
+.imagen-previa-container:hover {
+  border-color: #ff00ff;
+  background: rgba(255, 255, 255, 0.3);
+  transform: scale(1.02);
+}
+
+.imagen-previa {
+  max-width: 100%;
+  height: auto;
+  border-radius: 12px;
+  object-fit: cover;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+}
+
+button {
+  background: linear-gradient(135deg, #ffcc00, #ff6600);
+  color: white;
+  padding: 16px;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  font-size: 18px;
+  width: 100%;
+  font-weight: bold;
+  text-transform: uppercase;
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+
+button::before {
+  content: '';
+  position: absolute;
+  top: -5px;
+  left: -5px;
+  right: -5px;
+  bottom: -5px;
+  background: linear-gradient(45deg, #ffcc00, #ff3300, #ff00ff);
+  z-index: -1;
+  filter: blur(15px);
+  opacity: 0.5;
+}
+
+
+button:hover {
+  background: linear-gradient(135deg, #ff9900, #ff3300);
+  transform: translateY(-3px);
+  box-shadow: 0 8px 20px rgba(255, 51, 0, 0.5);
+}
+
+
+button:disabled {
+  background: #bbb;
+  cursor: not-allowed;
+  transform: none;
+  box-shadow: none;
+}
+
+
+@media (max-width: 480px) {
+  .formulario-reporte {
+      padding: 20px;
+      max-width: 95%;
+  }
+
+  input, button {
+      font-size: 16px;
+      padding: 12px;
+  }
+}  */
+
+
+
+/* Estilo general del formulario */
+.formulario-reporte {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  max-width: 100%;
+  margin: auto;
+  padding: 30px;
+  background: linear-gradient(135deg, #4b0082, #8a2be2);
+  border-radius: 18px;
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.3);
+  width: 100%;
+  max-width: 500px;
+  transition: all 0.3s ease-in-out;
+  color: white;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Efecto de luz neón */
+.formulario-reporte::before {
+  content: '';
+  position: absolute;
+  top: -5px;
+  left: -5px;
+  right: -5px;
+  bottom: -5px;
+  background: linear-gradient(45deg, #ff00ff, #ffcc00, #00ffcc, #ff3300);
+  z-index: -1;
+  border-radius: 20px;
+  filter: blur(20px);
+  opacity: 0.5;
+}
+
+/* Efecto al pasar el mouse */
+.formulario-reporte:hover {
+  transform: scale(1.04);
+  box-shadow: 0 18px 50px rgba(0, 0, 0, 0.4);
+}
+
+/* Estilo de los inputs */
+input {
+  padding: 14px 18px;
+  border: 2px solid rgba(255, 255, 255, 0.5);
+  border-radius: 12px;
+  font-size: 17px;
+  width: 455px;
+  background: rgba(255, 255, 255, 0.15);
+  color: white;
+  transition: all 0.3s ease;
+  backdrop-filter: blur(8px);
+}
+
+/* Efecto de los inputs al enfocarse */
+input:focus {
+  border-color: #ffcc00;
+  background: rgba(255, 255, 255, 0.3);
+  outline: none;
+  box-shadow: 0 0 15px rgba(255, 204, 0, 0.8);
+}
+
+/* Estilo para los errores */
+.error {
+  color: #ffcc00;
+  font-size: 15px;
+  font-weight: bold;
+  text-align: center;
+  margin-top: -5px;
+}
+
+/* Estilo para el botón */
+button {
+  background: linear-gradient(135deg, #ffcc00, #ff6600);
+  color: white;
+  padding: 16px;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  font-size: 18px;
+  width: 100%;
+  font-weight: bold;
+  text-transform: uppercase;
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Efecto al pasar el ratón sobre el botón */
+button:hover {
+  background: linear-gradient(135deg, #ff9900, #ff3300);
+  transform: translateY(-3px);
+  box-shadow: 0 8px 20px rgba(255, 51, 0, 0.5);
+}
+
+/* Efecto de botón deshabilitado */
+button:disabled {
+  background: #bbb;
+  cursor: not-allowed;
+  transform: none;
+  box-shadow: none;
+}
+
+/* Diseño responsivo para pantallas pequeñas */
+@media (max-width: 480px) {
+  .formulario-reporte {
+    padding: 20px;
+    max-width: 95%; /* Reducción de ancho para pantallas pequeñas */
+  }
+
+  input, button {
+    font-size: 16px; /* Tamaño de fuente ajustado para dispositivos móviles */
+    padding: 12px; /* Reducción de padding */
+  }
+
+  input {
+    width: 100%; /* Los inputs ahora ocuparán todo el ancho disponible */
+  }
+
+  button {
+    font-size: 16px; /* Ajuste del tamaño del texto en el botón */
+    padding: 14px;
+  }
+}

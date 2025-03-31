@@ -1,0 +1,96 @@
+<!-- <div class="formulario-reporte">
+    <input [(ngModel)]="id" placeholder="ID del equipo" />
+    <input [(ngModel)]="descripcion" placeholder="Descripción del problema" />
+    <input [(ngModel)]="usuario" placeholder="Nombre del usuario" />
+    <input [(ngModel)]="foto" type="file" />
+    <button (click)="mandarReporte()">Mandar el reporte</button>
+  </div> -->
+
+<!-- Bien hecho -->
+
+  <!-- <div class="formulario-reporte">
+
+    <input type="number" [(ngModel)]="id" placeholder="ID del equipo" (input)="validarEquipo()" />
+    <p *ngIf="mensajeErrorEquipo" class="error">{{ mensajeErrorEquipo }}</p>
+  
+    <input [(ngModel)]="descripcion" placeholder="Descripción del problema" />
+  
+ 
+    <input [(ngModel)]="usuario" placeholder="Nombre del usuario" (input)="validarUsuario()" />
+    <p *ngIf="mensajeErrorUsuario" class="error">{{ mensajeErrorUsuario }}</p>
+  
+  
+    <input type="file" (change)="cargarImagen($event)" />
+    <img *ngIf="foto" [src]="foto" alt="Vista previa de la imagen" class="imagen-previa" />
+  
+    
+    <button (click)="mandarReporte()" [disabled]="mensajeErrorEquipo || mensajeErrorUsuario">
+      Mandar el reporte
+    </button>
+  </div>
+   -->
+<!-- Celu -->
+
+
+
+
+<!-- listo -->
+ <!-- <div>
+   <div class="formulario-reporte">
+  
+    <input type="number" [(ngModel)]="id" placeholder="ID del equipo" (input)="validarEquipo()" />
+    <p *ngIf="mensajeErrorEquipo" class="error">{{ mensajeErrorEquipo }}</p>
+  
+   
+    <input [(ngModel)]="descripcion" placeholder="Descripción del problema" />
+  
+
+    <input [(ngModel)]="usuario" placeholder="Nombre del usuario" (input)="validarUsuario()" />
+    <p *ngIf="mensajeErrorUsuario" class="error">{{ mensajeErrorUsuario }}</p>
+  
+    
+    <input type="file" (change)="cargarImagen($event)" />
+
+<div *ngIf="foto" class="imagen-previa-container">
+  <img [src]="foto" alt="Vista previa de la imagen" class="imagen-previa" />
+</div>
+  
+    <button (click)="mandarReporte()" [disabled]="mensajeErrorEquipo || mensajeErrorUsuario">
+      Mandar el reporte
+    </button>
+  </div>
+   <app-login></app-login>
+
+</div>
+  -->
+
+
+  <div>
+    <div class="formulario-reporte">
+      <!-- Input para el ID del equipo -->
+      <input type="number" [(ngModel)]="id" placeholder="🔢 ID del equipo" (input)="validarEquipo()" />
+      <p *ngIf="mensajeErrorEquipo" class="error">{{ mensajeErrorEquipo }}</p>
+  
+      <!-- Input para la descripción del problema -->
+      <input [(ngModel)]="descripcion" placeholder="📝 Descripción del problema" />
+  
+      <!-- Input para el nombre del usuario -->
+      <input [(ngModel)]="usuario" placeholder="👤 Nombre del usuario" (input)="validarUsuario()" />
+      <p *ngIf="mensajeErrorUsuario" class="error">{{ mensajeErrorUsuario }}</p>
+  
+      <!-- Input para cargar la imagen -->
+      <input type="file" (change)="cargarImagen($event)" />
+  
+      <!-- Vista previa de la imagen cargada -->
+      <div *ngIf="foto" class="imagen-previa-container">
+        <img [src]="foto" alt="Vista previa de la imagen" class="imagen-previa" />
+      </div>
+  
+      <!-- Botón para mandar el reporte -->
+      <button (click)="mandarReporte()" [disabled]="mensajeErrorEquipo || mensajeErrorUsuario">
+        📤 Mandar el reporte
+      </button>
+    </div>
+    <app-login></app-login>
+  </div>
+  
